@@ -1,0 +1,118 @@
+body {
+  background: #ecf0f1;
+  color: #333;
+  font-family: Lato, sans-serif;
+}
+
+.container {
+  width: 400px;
+  margin: 40px auto 0;
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.add-task {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-task input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.add-task button {
+  background: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 0 16px;
+  font-size: 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-task button:hover {
+  background: #27ae60;
+}
+
+.progress-container {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#progress-bar {
+  background-color: #ddd;
+  width: 70%;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+#progress-fill {
+  background-color: #2ecc71;
+  height: 100%;
+  width: 0%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 20px;
+  transition: width 0.3s ease;
+  user-select: none;
+}
+
+ul#task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul#task-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding: 8px 10px;
+  background: #fafafa;
+  border-radius: 5px;
+  border: 1px solid #edecec;
+}
+
+ul#task-list li.completed label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+ul#task-list li label {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+ul#task-list li .actions button {
+  margin-left: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #444;
+  user-select: none;
+}
+
+ul#task-list li .actions button.complete { color: #16a085; }
+ul#task-list li .actions button.edit { color: #2980b9; }
+ul#task-list li .actions button.delete { color: #c0392b; }
+
+ul#task-list li .actions button:hover {
+  opacity: 0.7;
+}

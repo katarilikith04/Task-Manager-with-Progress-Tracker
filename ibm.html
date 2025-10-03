@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Task Manager with Progress Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Task Manager</h1>
+    <div class="add-task">
+      <input type="text" id="task-input" placeholder="Add a new task..." />
+      <button id="add-btn" title="Add Task">➕</button>
+    </div>
+    <div class="progress-container">
+      <label for="progress-bar">Progress:</label>
+      <div id="progress-bar">
+        <div id="progress-fill">0%</div>
+      </div>
+    </div>
+    <ul id="task-list"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
